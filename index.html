@@ -34,17 +34,15 @@
 				</div>
 				<!-- Navbar right -->
 				<div class="navbar-header2 pull-right">
-					<button id="header-btn2" class="header-btn2  btn-lg" title="RESERVE" style="border: none; background: none">
-						<p class="header-btn2_plus">
-            				<span></span>
-           				 	<span></span>
-        				</p>
+					<button id="header-btn2" class="header-btn2  hidden-xs" title="RESERVE" style="border: none; background: none">
        				   <div class="header-btn_inner2">RESERVATION</div>
 							<p class="header-btn_text2">宿泊予約<span>・確認</span></p>
 					</button>
-					<button id="header-btn-open pull-right" class="header-btn  btn-lg" title="MENU" style="border: none; background: none; padding-top: 10px">
+					<button id="header-btn-open pull-right" class="header-btn" title="MENU" style="border: none; background: none; padding-top: 10px">
 						<div class="header-btn_inner">
-							<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+							<div class="navbar-toggler animate">
+								<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+							</div>
 						</div>
 						<p class="header-btn_text">MENU</p>
 					</button>
@@ -58,23 +56,23 @@
 	        	<!-- Div Item of carousel -->
 	            <div class="item active">
 	                <div class="carousel-caption ">
-	                <a href="" id = "info"><img src="assets/img/ico_scroll.png" alt="スクロール" data-lazy-loaded="true"></a>
+	                <a class = "mouse" id="info"><img src="assets/img/ico_scroll.png" alt="スクロール"></a>
 	                </div>
 	            </div>
 	            <div class="item">
 	                <div class="carousel-caption">
-	                     <a href="" id = "info"><img src="assets/img/ico_scroll.png" alt="スクロール"></a>
+	                     <a class = "mouse" id ="info"><img src="assets/img/ico_scroll.png" alt="スクロール"></a>
 	                </div>
 	            </div>
 	            <div class="item">
 	                <div class="carousel-caption">
-	                    <a href="" id = "info" ><img src="assets/img/ico_scroll.png" alt="スクロール"></a>
+	                    <a class = "mouse" id = "info" ><img src="assets/img/ico_scroll.png" alt="スクロール"></a>
 	                </div>
 	            </div>
 	        </div>
 	    </div>
 		<!-- ==================================INFOMATION ========================== -->
-		<div class="infomation" id="info">
+		<div class="infomation" class="info">
 			<div class="container">
 				<div class="title-infomation"> <p>しあわせが息づく<br class="drop-line">「至福の庭園」</p></div>
 				<div class="text-infomation">
@@ -88,12 +86,13 @@
 		<div class="season">
 			<div class="title"><h1>SEASON</h1></div>
 			<div class="description"> 四季の変化に富んだ軽井沢。</br>今のおすすめは、こんな楽しみかた</div>
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<!-- Using col-md4 of bootstap to display same 3 box -->
 					<div class="col-md-4 season-child">
 						<div class="img-season">
 							<a href="#"><img  class="image img-responsive" src="assets/img/sweets2017w_main.jpg" alt=""/ ></a>
+							<p class="tag-season">食</p>
 						</div>
 						<div class="description-season">
 							<p>雪降る森で過ごすクリスマスのひととき</p>
@@ -104,6 +103,7 @@
 					<div class="col-md-4 season-child">
 						<div class="img-season">
 							<a href="#"><img  class="image img-responsive" src="assets/img/xmascandle_main.jpg" alt=""/></a>
+							<p class="tag-season1">自然・季節</p>
 						</div>
 						<!-- Description of an item -->
 						<div class="description-season"> 
@@ -114,19 +114,20 @@
 					</div>
 					<div class="col-md-4 season-child">
 						<div class="img-season">
-							<a href="#"><img  class="image img-responsive" src="assets/img/xmascandle_main.jpg" alt=""/></a>
+							<a href="#"><img  class="image img-responsive" src="assets/img/cake2017_main-670x402.jpg" alt=""/></a>
+							<p class="tag-season">食</p>
 						</div>
 						<!-- Description of an item -->
 						<div class="description-season"> 
 							<p>聖なる森のクリスマス</p>
 							<h4>軽井沢高原教会　クリスマスキャンドルナイト2017</h4>
-							<p class="priof">期間:2017/12/1~12/24の毎週金土日、12/25<br>場所:軽井沢高原教会</p>
+							<p class="priof">期間:2017/12/1~12/24の毎週金土日、12/25</br>場所:軽井沢高原教会</p>
 						</div>
 					</div>
 				</div>
 				<!-- --More, click to display more item -->
 				<div class="col-md-12 more-btn">
-					<center><a href="" class="moreBtn"><span>MORE</span></a></center>
+					<center><a href="" class="moreBtn"><span>More</span></a></center>
 				</div>
 			</div>
 		</div>
@@ -143,7 +144,7 @@
 						</div>
 						<!-- --More, click to display more item -->
 						<div class="col-md-12 more-btn">
-							<center><a href="" class="moreBtn"><span>MORE</span></a></center>
+							<center><a href="" class="moreBtn"><span>More</span></a></center>
 						</div>
 					</div> 
 					<div class="col-md-6 stay-box wedding">
@@ -165,7 +166,7 @@
 						</div>
 						<!-- --More, click to display more item -->
 						<div class="col-md-12 more-btn">
-							<center><a href="" class="moreBtn"><span>MORE</span></a></center>
+							<center><a href="" class="moreBtn"><span>More</span></a></center>
 						</div>
 					</div>
 				</div>
@@ -232,48 +233,23 @@
 			</div>
 		</div>
 		<!-- =================================FOOTER================================= -->
-		<div class="container">
-		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-			<div class="col-md-12 footer-top">
-				<div class="col-md-6 hidden-xs">
-				</div>
-				<div class="col-md-6 bottom">
-					<div class="logo-bottom">
-						<div class="footer-logo"> <img src="../assets/img/logo_hbc.png" alt="軽井沢ホテルブレストンコート" width="170px" heigh="30px"></div> <br>
-						<div class="footer-menu">
-							<div class="col-md-12">
-								<ul class="nav navbar-nav menu-footer">
-									<li><a  href="/">会議・研修でのご利用</a></li>
-									<li><a href="/">CMギャラリー</a></li>
-						            <li><a href="/">Instagram</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 hidden-xs">
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="col-md-6">
-				</div>
-				<div class="col-md-6 menu-footer">
-					<ul class="nav navbar-nav ">
-						<li><a href="">会社概要</a></li>
-						<li><a href="">個人情報保護方針</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md-12">
-				<p class="footer-copyright"><small>Copyright Hotel Bleston Court. All Rights Reserved.</small></p>
-			</div>
-		</div>
-		</div>
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+		<footer class="footer">
+  			<div class="container">
+		  		<p class="footer-logo"> <img src="assets/img/logo_hbc.png" alt="" width="170" height="30"></p>
+		  		<ul class="footer1 nav navbar">
+		    		<li><a href="#">会議・研修でのご利用</a> </li>
+		    		<li><a href="#">CMギャラリー</a></li>
+		    		<li><a href="#">Instagram</a></li>
+			   </ul>
+			   <ul class="footer2">
+				    <li > <a href="#">会社概要</a> </li>
+				    <li class="border-line"><a href="#">個人情報保護方針</a></li>
+			   </ul>
+		   		<p class="footer-copyright"><small>Copyright Hotel Bleston Court. All Rights Reserved.</small> </p>
+		  	</div>
+ 		</footer>
 		<!-- ===============END=============== -->
 		<!-- Back to top BTN -->
-		<div id="toTop" class="btn btn-default"><span class="glyphicon glyphicon-chevron-up"></span></div>
+		<div id="toTop" class="btn btn-default" style="border: none; background: none"><img src="assets/img/up.ico" alt="" height="30px" width="35px"></span></div>
 	</body>
 </html>
