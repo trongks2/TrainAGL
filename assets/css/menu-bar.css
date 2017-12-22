@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body{
+  top: 40px;
+  font-family:"Open Sans",Hiragino Sans,"ヒラギノ角ゴシック","ヒラギノ角ゴPro W3","Hiragino Kaku Gothic Pro",YuGothic,"游ゴシック体","Yu Gothic","游ゴシック","Meiryo UI","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",Arial,Helvetica,Verdana,sans-serif;
+}
+.phone{
+	display: none;
+}
+.menu-right{
+	display:  block;
+	margin-left: 70px;
+}
+@media screen and (max-width:1025px){
+	.menu-right{
+	display:  none;
+}
+}
+@media screen and (min-width: 768px){
+	.custom-menu{
+		height: 120px;
+		padding-top:16px;
+		opacity:  0.9;
+	}
+	.logo1{
+		padding-top: 20px;
+		float: right;
+		left: 45%;
+	}
+	.nav-custom{
+		width:55%;
+	}
+}
+@media screen and (max-width:600px){
+	.phone{
+		display:  block;
+		margin-top: 5px;
+		background: none;
+		border: none;
+		margin-right: 5px;
+	}
+}
+@media screen and (max-width: 768px){
+	.custom-menu{
+		height: 78px;
+		opacity:  0.9;
+	}
+	.logo1{
+		margin-top: 20px;
+		margin-left: 20px;
+		float: left;
+	}
+	.logo1>img{
+		height:  40px;
+		width: 200px;
+		
+	}
+	.btn-open{
+		float:  left;
+		margin-top: -2px;
+		margin-bottom: -20px;
+
+	}
+}
+/* Navbar */
+.navbar-header2{
+  margin-right
+}
+.header-btn_inner2{
+  background-color: #CCB76F;
+  text-align: center;
+  height: 29.5px;
+  width: 140px;
+  letter-spacing: .1em;
+  line-height: 230%;
+  font-size: 13px;
+  color: #fff;
+  font-family: "Playfair Display","ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","游明朝",YuMincho,"HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+
+}
+.header-btn_text2{
+  padding-top: 13px;
+  bottom: 2px;
+  font-size: 12.2px;
+}
+.header-btn{
+/*   margin-left: 5px; */
+ 
+}
+.header-btn2{
+/*   margin-left: 5px; */
+  margin-top: px;
+  border:  none;
+  background:  none;
+}
+.header-btn1{
+  margin-top: -5px;
+  border:  none;
+  background:  none;
+}
+
+
+#sidebar:before,#sidebar:after {
+position: fixed;
+  content:"";
+  position:absolute;
+  width:0vw;
+  height:1082px;
+  top:  0px;
+  background:#fff;
+  z-index:2;
+  transition:all 350ms;
+}
+#sidebar:after {
+  right:0px;
+  top:0px;
+}
+#sidebar.active:before,#sidebar.active:after {
+  width:50vw;
+}
+#sidebar ul  {
+  color:#000;
+  position:absolute;
+  display:flex;
+  width:100vw;
+  height:92%;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  z-index:3;
+  top:-100vh;
+}
+#sidebar.active ul  {
+  transition:all 300ms linear 350ms;  
+  top:0px;
+}
+#sidebar ul li {
+  list-style:none;
+  margin:5px 0px;
+  cursor:pointer;
+  padding:1px 15px;
+}
+
+#toggle-btn {
+  position:fixed;
+  right:30px;
+  width:50px;
+  height:50px;
+  background:#fff;
+  z-index:10;
+  border:3px solid #b94071;
+  cursor:pointer;
+  transition:all 300ms ease;
+}
+#toggle-btn.active {
+  
+  transform:rotate(-45deg);
+  background:#b94071;
+  border:4px solid #eee;
+}
+#toggle-btn.active:before,#toggle-btn.active:after {
+  width:30px;
+  background:#eee;
+}
+#toggle-btn:before,#toggle-btn:after {
+  content:"";
+  position:absolute;
+  width:35px;
+  height:6px;
+  background:#b94071;
+  left:50%;
+  transform:translateX(-50%);
+  transition:all 300ms ease 200ms;
+}
+#toggle-btn:before {
+  top:12px;
+}
+#toggle-btn:after {
+  bottom:12px;
+}
+#toggle-btn.active:before {
+  transform:rotate(80deg) translate(3px,14px);
+}
+#toggle-btn.active:after {
+  transform:rotate(-3deg) translate(-14px,-7px);
+}
+
+.content {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding:50px 20px 0px 20px;
+}
+.content > * {
+  margin:15px 0px;
+}
+.content {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding:50px 20px 0px 20px;
+}
+.content > * {
+  margin:15px 0px;
+}
+.header-en{
+  font-size: 20px;
+  letter-spacing: .1em;
+}
+.header-ja{
+  font-size: 10px;
+  margin-top: -20px;
+}
+.menu-btn{
+  color: #fff;
+  background-color: #B5870B;
+  opacity: 0.8;
+  font-size: 13px;
+  width: 300px;
+  height:  40px;
+  text-align: center;
+}
+.menu-btn a{
+  color:  #fff;
+  text-decoration: none;
+}
+.bnt-text{
+  padding-top: 10px;
+}
+.text-dec{
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+.number{
+  font-size: 30px;
+}
+.text{
+  font-size: 14px;
+  line-height: 1;
+}
+#sidebar ul > li > .menu-btn{
+  padding-top: 10px;
+}

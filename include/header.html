@@ -6,52 +6,80 @@
 		<title>星野リゾート 軽井沢ホテルブレストンコート</title>
 		<!-- Mobile -->
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<!-- CSS -->
-		<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css" >
-		<link rel="stylesheet" href="../assets/css/style.css" >
-		<link href="../libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.css" >
+		<!-- Font Awesome CSS -->
+		<link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<!-- My CSS -->
+		<link rel="stylesheet" href="/assets/css/style.css" >
+		<!-- Jquery Libs -->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
-		<script src="../assets/js/floating-menu.js"></script>
-		<script src="../assets/js/back-to-top.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+		<!-- My JS -->
+		<script src="/assets/js/back-to-top.js"></script>
 		<!-- Favicon of website -->
-		<link rel="shortcut icon" href="../assets/img/favicon-hbc.ico">
-
+		<link rel="shortcut icon" href="/assets/img/favicon-hbc.ico">
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Abel|Playfair+Display:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="/assets/css/menu-bar.css">
 	</head>
 	<body>
-		<nav class="navbar-fixed-top floating-header">
-			<a href="#" class="site-logo">
-				<img src="../assets/img/logo_hoshinoresort.png" alt="">
-			</a>
-			<!-- Logo floating left -->
-			<ul class="nav navbar-nav pull-right">
-				<li class="inner-logo hidden-xs"><a href="#"><img src="../assets/img/logo_hbc.png" alt="" class="inner-logo"></a></li>
-				<li>
-					<div class="floating-menu-btn pull-left">
-						<div class="floating-menu-toggle-wrap">
-							<div class="floating-menu-toggle">
-								<span class="bar"></span>
-								<span class="bar"></span>
-								<span class="bar"></span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="btn-inner">
-					<div class="btn-group">
-						<div class=""><button class="btn-custom">RESERVATION</button></div>
-						<p class="header-btn_text2">宿泊予約<span>・確認</span></p>
-					</div>
-				</li>
-			</ul>
-			<!-- button to click floating -->
-			<div class="main-navigation-wrap">
-				<nav class="main-navigation" data-back-btn-text="Back">
-					<ul>
-						<h2>Not Finish</h2>
+		<!-- ===============================NAVBAR====================== -->
+		<nav class="custom-menu navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header nav-custom">
+					<button type="button" class="navbar-toggle hidden-lg hidden-md hidden-xl btn-open" onclick="toggleMenu(this);" title="RESERVE">
+						<div class="header-btn_inner1"><i class="fa fa-bars fa-2x"></i></div>
+							<p class="header-btn_text1">MENU</p>
+					</button>
+					<a class=" logo1 navbar-brand1" href=""><img src="/assets/img/logo_hbc.png" alt="星野リゾート" class="img-responsive" style="padding-left:20px"></a>
+					<a class="navbar-brand pull-left logo_hr hidden-xs" href=""><img src="/assets/img/logo_hoshinoresort.png" alt="星野リゾート" class="img-responsive"></a>
+					<button type="" class="phone pull-right hidden-lg hidden-md hidden-xl"><i class="fa fa-mobile fa-3x" aria-hidden="true"><p class="" style="font-size:10px">宿泊予約</p></i></button>
+				</div>
+				<!--An area will be hidden when website have langer size -->
+				<div class="menu-right pull-right hidden-xs">
+					<ul class="nav navbar-nav">
+						<li>
+						  	<button id="header-btn2" class=" header-btn2 pull-left" id="toggle-btn" onclick="toggleMenu(this);" title="RESERVE">
+					   			<div class="header-btn_inner2 ">RESERVATION</div>
+								<p class="header-btn_text2">宿泊予約<span>・確認</span></p>
+							</button>
+						</li>
+						<li>
+		          			<button id="header-btn1 hidden-xs" class="header-btn1">
+								<div class="header-btn_inner1"><i class="fa fa-bars fa-3x"></i></div>
+								<p class="header-btn_text1">MENU</p>
+							</button>
+		        		</li>
 					</ul>
-				</nav><!-- main-navigation -->
-			</div><!-- main-navigation-wrap -->
+				</div>
+			</div>
 		</nav>
-	</body>
+
+			<div id="sidebar">
+	    <ul>
+		    <li><p class="header-en">RESERVATION</p></li>
+		    <li><p class="header-ja">宿泊予約・確認</li>
+		    <li class="menu-btn"><p class="bnt-text">ご予約・空室照会</p></button>
+		    <li class="menu-btn"><p>ご予約・空室照会</p>
+		    <li class="text-dec"><a href="">お問い合わせ・ご相談</a></li>
+		    <li><p class="number">0267-46-6200</li>
+		    <li><p class="menu-tel__text">9:00～19:00　年中無休</p></li>
+	    </ul>
+	</div>
+
+    <script> 
+    	function toggleMenu(ref) {
+  			document.getElementById('sidebar').classList.toggle('active');
+  			ref.classList.toggle('active');
+		}
+	</script>
+
+
+
+
+</body>
+
 </html>

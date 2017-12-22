@@ -6,116 +6,138 @@
 		<title>星野リゾート 軽井沢ホテルブレストンコート</title>
 		<!-- Mobile -->
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<!-- CSS -->
+		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" >
-		<link rel="stylesheet" href="assets/css/style.css" >
+		<!-- Font Awesome CSS -->
 		<link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<!-- My CSS -->
+		<link rel="stylesheet" href="assets/css/style.css" >
+		<link rel="stylesheet" href="assets/css/menu-bar.css" >
+		<!-- Jquery Libs -->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<!-- Bootstrap JS -->
 		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-		<script src="assets/js/floating-menu.js"></script>
+		<!-- My JS -->
 		<script src="assets/js/back-to-top.js"></script>
 		<!-- Favicon of website -->
 		<link rel="shortcut icon" href="assets/img/favicon-hbc.ico">
-
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Abel|Playfair+Display:400,700" rel="stylesheet">
 	</head>
 	<body>
-		<nav class="navbar-fixed-top floating-header">
-			<a href="#" class="site-logo">
-				<img src="assets/img/logo_hoshinoresort.png" alt="">
-			</a>
-			<!-- Logo floating left -->
-			<ul class="nav navbar-nav pull-right">
-				<li class="inner-logo hidden-xs"><a href="#"><img src="assets/img/logo_hbc.png" alt="" class="inner-logo"></a></li>
-				<li>
-					<div class="floating-menu-btn pull-left">
-						<div class="floating-menu-toggle-wrap">
-							<div class="floating-menu-toggle">
-								<span class="bar"></span>
-								<span class="bar"></span>
-								<span class="bar"></span>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="btn-inner">
-					<div class="btn-group">
-						<div class=""><button class="btn-custom">RESERVATION</button></div>
-						<p class="header-btn_text2">宿泊予約<span>・確認</span></p>
-					</div>
-				</li>
-			</ul>
-			<!-- button to click floating -->
-			<div class="main-navigation-wrap">
-				<nav class="main-navigation" data-back-btn-text="Back">
-					<ul>
-						<h2>Not Finish</h2>
+		<!-- ===============================NAVBAR====================== -->
+		<nav class="custom-menu navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header nav-custom">
+					<button type="button" class="navbar-toggle hidden-lg hidden-md hidden-xl btn-open" onclick="toggleMenu(this);" title="RESERVE">
+						<div class="header-btn_inner1"><i class="fa fa-bars fa-2x"></i></div>
+							<p class="header-btn_text1">MENU</p>
+					</button>
+					<a class=" logo1 navbar-brand1" href=""><img src="/assets/img/logo_hbc.png" alt="星野リゾート" class="img-responsive" style="padding-left:20px"></a>
+					<a class="navbar-brand pull-left logo_hr hidden-xs" href=""><img src="/assets/img/logo_hoshinoresort.png" alt="星野リゾート" class="img-responsive"></a>
+					<button type="" class="phone pull-right hidden-lg hidden-md hidden-xl"><i class="fa fa-mobile fa-3x" aria-hidden="true"><p class="" style="font-size:10px">宿泊予約</p></i></button>
+				</div>
+				<!--An area will be hidden when website have langer size -->
+				<div class="menu-right pull-right hidden-xs">
+					<ul class="nav navbar-nav">
+						<li>
+						  	<button id="header-btn2" class=" header-btn2 pull-left" id="toggle-btn" onclick="toggleMenu(this);" title="RESERVE">
+					   			<div class="header-btn_inner2 ">RESERVATION</div>
+								<p class="header-btn_text2">宿泊予約<span>・確認</span></p>
+							</button>
+						</li>
+						<li>
+		          			<button id="header-btn1 hidden-xs" class="header-btn1">
+								<div class="header-btn_inner1"><i class="fa fa-bars fa-3x"></i></div>
+								<p class="header-btn_text1">MENU</p>
+							</button>
+		        		</li>
 					</ul>
-				</nav><!-- main-navigation -->
-			</div><!-- main-navigation-wrap -->
+				</div>
+			</div>
 		</nav>
-		<div id="carousel-id" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-id" data-slide-to="0" class=""></li>
-				<li data-target="#carousel-id" data-slide-to="1" class=""></li>
-				<li data-target="#carousel-id" data-slide-to="2" class="active"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="item">
-					<img data-src="" alt="First slide" src="assets/img/4.jpg">
-				</div>
-				<div class="item">
-					<img data-src="" alt="Second slide" src="assets/img/4.jpg">
-				</div>
-				<div class="item active">
-					<img data-src="" alt="Third slide" src="assets/img/4.jpg">
-				</div>
-			</div>
-			<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-			<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-		</div>
-		<div class="infomation">
+
+		<!-- =================================COLLAPSE ========================== -->
+		<!-- =============================== MAIN CAROUSEL ===================== -->
+		<div class="carousel slide carousel-fade" data-ride="carousel">
+	        <!-- Wrapper for slides -->
+	        <div class="carousel-inner" role="listbox" >
+	        	<!-- Div Item of carousel -->
+	            <div class="item active">
+	                <div class="carousel-caption ">
+	                <a class = "mouse" id="info"><img src="assets/img/ico_scroll.png" alt="スクロール"></a>
+	                </div>
+	            </div>
+	            <div class="item">
+	                <div class="carousel-caption">
+	                     <a class = "mouse" id ="info"><img src="assets/img/ico_scroll.png" alt="スクロール"></a>
+	                </div>
+	            </div>
+	            <div class="item">
+	                <div class="carousel-caption">
+	                    <a class = "mouse" id = "info" ><img src="assets/img/ico_scroll.png" alt="スクロール"></a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+		<!-- ==================================INFOMATION ========================== -->
+		<div class="infomation" class="info">
 			<div class="container">
-				<div class="title-infomation"> <h3>しあわせが息づ<br class="drop-line">く「至福の庭園」</h3></div>
-				<div class="text-info">
-					<p> 豊かな森にたたずむ<br class="drop-line">軽井沢ホテルブレストンコート。</p>
-					<p> 清らかな自然。季節を楽しむ食。<br class="drop-line">歴史ある迎賓文化。</p>
-					ここに息づくすべてが<br class="drop-line">、静かに心とからだを満たしてくれる。
+				<div class="title-infomation"> <p>しあわせが息づく<br class="drop-line">「至福の庭園」</p></div>
+				<div class="text-infomation">
+					<p class="line-info"> 豊かな森にたたずむ<br class="drop-line">軽井沢ホテルブレストンコート。</p>
+					<p class="line-info"> 清らかな自然。季節を楽しむ食<br class="drop-line">。歴史ある迎賓文化。</p>
+					<p class="line-info">ここに息づくすべてが<br class="drop-line">、静かに心とからだを満たしてくれる。</p>
 				</div>
 			</div>
 		</div>
-		<!-- =============================== SEASON============================== -->
+		<!-- =============================== SEASON================================= -->
 		<div class="season">
 			<div class="title"><h1>SEASON</h1></div>
-			<div class="description"> 四季の変化に富んだ軽井沢。</br>今のおすすめは、こんな楽しみかた</div>
+			<div class="description"> 四季の変化に富んだ軽井沢。<br>今のおすすめは、こんな楽しみかた</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
-						<div class="thumbnail">
-							<a href="#"><img  class="image" src="assets/img/sweets2017w_main.jpg" alt=""/>	<span class="label label-default">New</span>
-</a>
+					<!-- Using col-md4 of bootstap to display same 3 box -->
+					<div class="col-md-4 season-child">
+						<div class="img-season">
+							<a href="#"><img  class="image img-responsive" src="assets/img/sweets2017w_main.jpg" alt="写真：軽井沢スイーツコレクション2017クリスマス"/ ></a>
+							<p class="tag-season">食</p>
 						</div>
-						<div class="description-season"> 雪降る森で過ごすクリスマスのひととき <br>軽井沢スイーツコレクション2017クリスマス<br>期間:2017/12/1~2017/12/25（12/5～12/6 12:00までは休館いたします）</br>場所:ホテルブレストンコート ザ・ラウンジ
+						<div class="description-season">
+							<p>雪降る森で過ごすクリスマスのひととき</p>
+							<h4>軽井沢スイーツコレクション2017クリスマス</h4>
+							<p class="priof"> 期間:2017/12/1~2017/12/25（12/5～12/6 12:00までは休館いたします）</br>場所:ホテルブレストンコート ザ・ラウンジ</p>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="thumbnail">
-							<a href="#"><img  class="image" src="assets/img/xmascandle_main.jpg" alt=""/></a>
+					<div class="col-md-4 season-child">
+						<div class="img-season">
+							<a href="#"><img  class="image img-responsive" src="assets/img/xmascandle_main.jpg" alt="写真：軽井沢高原教会　クリスマスキャンドルナイト2017"/></a>
+							<p class="tag-season1">自然・季節</p>
 						</div>
 						<!-- Description of an item -->
-						<div class="description-season"> 聖なる森のクリスマス<br>軽井沢高原教会　クリスマスキャンドルナイト2017<br>期間:2017/12/1~12/24の毎週金土日、12/25<br>場所:軽井沢高原教会
+						<div class="description-season"> 
+							<p>聖なる森のクリスマス</p>
+							<h4>軽井沢高原教会　クリスマスキャンドルナイト2017</h4>
+							<p class="priof">期間:2017/12/1~12/24の毎週金土日、12/25<br>場所:軽井沢高原教会</p>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="thumbnail">
-							<a href="#"><img  class="image" src="assets/img/cake2017_main-670x402.jpg" alt=""/></a>
+					<div class="col-md-4 season-child">
+						<div class="img-season">
+							<a href="#"><img  class="image img-responsive" src="assets/img/cake2017_main-670x402.jpg" alt="写真：スイーツ・コース｢冬のムニュ・デセール｣"/></a>
+							<p class="tag-season">食</p>
 						</div>
-						<div class="description-season">【予約開始】軽井沢の自然がモチーフ<br>3種類のクリスマスケーキ<br>期間:予約受付 2017/11/1~2017/12/19<br>場所:ホテルブレストンコート ザ・ラウンジ
+						<!-- Description of an item -->
+						<div class="description-season"> 
+							<p>聖なる森のクリスマス</p>
+							<h4>軽井沢高原教会　クリスマスキャンドルナイト2017</h4>
+							<p class="priof">期間:2017/12/1~12/24の毎週金土日、12/25</br>場所:軽井沢高原教会</p>
 						</div>
 					</div>
 				</div>
-				<!-- --More, click to display more item -->
+				<!---More, click to display more item -->
 				<div class="col-md-12 more-btn">
-					<center><a href="" class="moreBtn"><span>MORE</span></a></center>
+					<center><a href="" class="moreBtn"><span>More</span></a></center>
 				</div>
 			</div>
 		</div>
@@ -124,115 +146,120 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 stay-box">
-						<h1>STAY</h1><br>
-						<h5>爽やかな高原の光の中で、<br>心を潤す軽井沢ステイ。</h3>
+						<h1 class="font-event">STAY</h1><br>
+						<p class="description-lead">爽やかな高原の光の中で、<br>心を潤す軽井沢ステイ。</p>
 						<br>
-						<div class="thumbnail">
-							<a href="#"><img  class="" src="assets/img/ph_idx_stay.jpg" alt=""/></a>
+						<div class="img-stay">
+							<a href="#"><img  src="assets/img/ph_idx_stay.jpg" class="img-responsive" alt="STAYカテゴリトップへ"/></a>
 						</div>
-						<center><a href="" class="moreBtn"><span>MORE</span></a></center>
+						<!-- --More, click to display more item -->
+						<div class="col-md-12 more-btn">
+							<center><a href="" class="moreBtn"><span>More</span></a></center>
+						</div>
 					</div> 
 					<div class="col-md-6 stay-box wedding">
-						<h1>WEDDING</h1><br>
+						<h1 clas="font-event">WEDDING</h1><br>
 						<h5>緑鮮やかな中庭で乾杯。 <br>木漏れ日の中で祝福につつまれるウエディング。</h5>
 						<br>
-						<div class="thumbnail">
-							<a href="#"><img class="" src="assets/img/ph_idx_stay.jpg" alt=""/></a>
+						<div class="img-wedding">
+							<a href="#"><img  src="assets/img/ph_idx_wedding.jpg" class="img-responsive" alt="WEDDINGカテゴリトップへ"/></a>
 						</div>
-						<center><a href="" class="moreBtn"><span>MORE</span></a></center>
+						<div class="col-md-12 small-item">
+							<div class="row">
+								<div class="col-md-3 img-small">
+									<img src="assets/img/pwf_main-180x108.jpg" height="75px" width="126px" alt="">
+								</div>
+								<div class="col-md-9 description-wedding">
+									<p>1 年で1 月だけの特別な<br><p class="title-item-wedding">プレミアムウエディングフェア</p>全館貸切で開催するプレミアムな5 日間</p>
+								</div>
+							</div>
+						</div>
+						<!-- --More, click to display more item -->
+						<div class="col-md-12 more-btn">
+							<center><a href="" class="moreBtn"><span>More</span></a></center>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- ==========================================+PLACE ====================================== -->
+		<!-- =================================PLACE ================================= -->
 		<div class="place">
 			<div class="title"><h1>DINING & SWEETS</h1></div>
 			<div class="description"> 豊かな自然が育んだ <br> おいしい軽井沢を味わう楽しみ。</div>
 			<div class="container">
 				<div class="row row-place">
-					<div class="item col-md-6 ">
-						<div class="img-place thumbnail">	
-							<a href="#"><img class="" src="assets/img/ph_idx_dining_yukawatan.jpg" alt=""/></a>
+					<div class="item-place col-md-6 ">
+						<div class="img-place ">
+							<a href="#"><img src="assets/img/ph_idx_dining_yukawatan.jpg" class="img-responsive" alt="写真：ブレストンコート ユカワタン"/></a>
 						</div>
-						<div class="description-place">ブレストンコート ユカワタン</div>
+						<div class="description-place">ブレストンコート ユカワタン
+							<p class="tag">yukawatan</p>
+						</div>
 					</div>
-					<div class="item col-md-6">
-						<div class="img-place thumbnail ">	
-							<a href="#"><img class="" src="assets/img/ph_idx_dining_sonmin.jpg" alt=""/></a>
+					<div class="item-place col-md-6">
+						<div class="img-place  ">	
+							<a href="#"><img  src="assets/img/ph_idx_dining_noones.jpg" class="img-responsive" alt="写真：ノーワンズレシピ"/></a>
 						</div>
-						<div class="description-place">ノーワンズレシピ	</div>
-					</div>
-				</div>
-				<div class="row row-place">
-						<div class="item col-md-6 ">
-						<div class="img-place thumbnail">	
-							<a href="#"><img class="" src="assets/img/ph_idx_dining_noones.jpg" alt=""/></a>
+						<div class="description-place">ノーワンズレシピ	
+							<p class="tag">No One's Recipe</p>
 						</div>
-						<div class="description-place">	ラウンジ</div>
-					</div>
-					<div class="item col-md-6 ">
-						<div class="img-place thumbnail">	
-							<a href="#"><img class="" src="assets/img/ph_idx_dining_lounge.jpg" alt=""/></a>
-						</div>
-						<div class="description-place">	ハルニレテラス</div>
 					</div>
 				</div>
 				<div class="row row-place">
-						<div class="item col-md-6 ">
-						<div class="img-place thumbnail">	
-							<a href="#"><img class="" src="assets/img/ph_idx_dining_harunire.jpg" alt=""/></a>
+					<div class="item-place col-md-6 ">
+						<div class="img-place ">	
+							<a href="#"><img src="assets/img/ph_idx_dining_lounge.jpg" class="img-responsive" alt="写真：ラウンジ"/></a>
 						</div>
-						<div class="description-place">村民食堂写真</div>
+						<div class="description-place">ラウンジ
+							<p class="tag">The Lounge</p></div>
 					</div>
-					<div class="item col-md-6 ">
-						<div class="img-place thumbnail">	
-							<a href="#"><img class="" src="assets/img/ph_idx_dining_gift.jpg" alt="写真：ギフト"/></a>
+					<div class="item-place col-md-6">
+						<div class="img-place">	
+							<a href="#"><img  src="assets/img/ph_idx_dining_harunire.jpg" class="img-responsive" alt="写真：ハルニレテラス"/></a>
 						</div>
-						<div class="description-place">ギフト	</div>
+						<div class="description-place">ハルニレテラス
+							<p class="tag">Harunire Terrace</p>
+						</div>
+					</div>
+				</div>
+				<div class="row row-place">
+					<div class="item-place col-md-6 ">
+						<div class="img-place ">	
+							<a href="#"><img src="assets/img/ph_idx_dining_yukawatan.jpg" class="img-responsive" alt=""/></a>
+						</div>
+						<div class="description-place">村民食堂
+							<p class="tag">Sonmin Syokudo</p>
+						</div>
+					</div>
+					<div class="item-place col-md-6">
+						<div class="img-place  ">	
+							<a href="#"><img  src="assets/img/ph_idx_dining_gift.jpg" class="img-responsive" alt="写真：ギフト"/></a>
+						</div>
+						<div class="description-place">ギフト	
+							<p class="tag">Gift</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- ========================FOOTER============================= -->
+		<!-- =================================FOOTER================================= -->
 		<footer class="footer">
-			<div class="container">
-				<div class="col-md-12 footer-top">
-					<div class="col-md-5 hidden-xs">
-					</div>
-					<div class="col-md-6 bottom">
-						<div class="logo-bottom">
-							<div class="footer-logo"> <img src="assets/img/logo_hbc.png" alt="軽井沢ホテルブレストンコート" width="170px" heigh="30px"></div> <br>
-							<div class="footer-menu">
-								<div class="col-md-12">
-									<ul class="nav navbar-nav menu-footer">
-										<li><a  href="/">会議・研修でのご利用</a></li>
-										<li><a href="/">CMギャラリー</a></li>
-							            <li><a href="/">Instagram</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 hidden-xs">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="col-md-6">
-					</div>
-					<div class="col-md-6 menu-footer">
-						<ul class="nav navbar-nav ">
-							<li><a href="">会社概要</a></li>
-							<li><a href="">個人情報保護方針</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-12">
-					<p class="footer-copyright"><small>Copyright Hotel Bleston Court. All Rights Reserved.</small></p>
-				</div>
-			</div>
-			<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-		</footer>
+  			<div class="container">
+		  		<p class="footer-logo"> <img src="assets/img/logo_hbc.png" alt="軽井沢ホテルブレストンコート" width="170" height="30"></p>
+		  		<ul class="footer1 nav navbar">
+		    		<li><a href="#">会議・研修でのご利用</a> </li>
+		    		<li><a href="#">CMギャラリー</a></li>
+		    		<li><a href="#">Instagram</a></li>
+			   </ul>
+			   <ul class="footer2">
+				    <li > <a href="#">会社概要</a> </li>
+				    <li class="border-line"><a href="#">個人情報保護方針</a></li>
+			   </ul>
+		   		<p class="footer-copyright"><small>Copyright Hotel Bleston Court. All Rights Reserved.</small> </p>
+		  	</div>
+ 		</footer>
+		<!-- ===============END=============== -->
+		<!-- Back to top BTN -->
+		<div id="toTop" class="btn btn-default" style="border: none; background: none"><img src="assets/img/up.ico" alt=""></div>
 	</body>
 </html>
